@@ -1,0 +1,349 @@
+<
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Novi Charani</title>
+
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            color: #333;
+            line-height: 1.5;
+            padding: 30px;
+        }
+
+        .cv {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* BAGIAN KIRI */
+        .sidebar {
+            background-color: #263746;
+            color: white;
+            padding: 30px 25px;
+        }
+
+        /* FOTO PROFIL */
+        .foto {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+            border: 3px solid #d3a66b;
+        }
+
+        h1 {
+            font-size: 27px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 17px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #d3a66b;
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+            color: #d3a66b;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .contact p {
+            overflow-wrap: anywhere;
+        }
+
+        .sidebar .item h3 {
+            color: white;
+        }
+
+        .sidebar .item {
+            margin-bottom: 18px;
+        }
+
+        .sidebar ul {
+            padding-left: 18px;
+        }
+
+        .sidebar li {
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+        /* BAGIAN KANAN */
+        .main {
+            padding: 30px;
+        }
+
+        .main h2 {
+            color: #263746;
+        }
+
+        .profile {
+            text-align: justify;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item h3 {
+            font-size: 14px;
+            margin-bottom: 4px;
+            color: #263746;
+        }
+
+        .date {
+            font-size: 12px;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 6px;
+        }
+
+        /* TAMPILAN HP */
+        @media (max-width: 650px) {
+            body {
+                padding: 10px;
+            }
+
+            .cv {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar,
+            .main {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        /* CETAK CV */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .cv {
+                max-width: 100%;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv">
+
+        <!-- KOLOM KIRI -->
+        <aside class="sidebar">
+
+            <!-- FOTO -->
+            <img src="novi.jpg.png"
+                 alt="Foto Novi Charani"
+                 class="foto">
+
+            <h1>NOVI CHARANI</h1>
+
+            <!-- KONTAK -->
+            <section class="contact">
+                <h2>Kontak</h2>
+
+                <p>
+                    <b>Phone:</b><br>
+                    0855-9125-2247
+                </p>
+
+                <p>
+                    <b>Email:</b><br>
+                    novicharani@gmail.com
+                </p>
+
+                <p>
+                    <b>Address:</b><br>
+                    Jakarta Selatan, Indonesia
+                </p>
+            </section>
+
+            <!-- PENDIDIKAN -->
+            <section>
+                <h2>Pendidikan</h2>
+
+                <div class="item">
+                    <h3>Telkom University Jakarta</h3>
+                    <p>S1 Sistem Informasi</p>
+                    <p>IPK saat ini: 3.79</p>
+                </div>
+
+                <div class="item">
+                    <h3>SMKN 8 Jakarta</h3>
+
+                    <p>
+                        Jurusan Manajemen Perkantoran
+                        Layanan Bisnis (MPLB)
+                    </p>
+
+                    <p>Rata-rata akhir: 86.10</p>
+                </div>
+            </section>
+
+            <!-- KETERAMPILAN -->
+            <section>
+                <h2>Keterampilan</h2>
+
+                <ul>
+                    <li>Komunikasi Interpersonal &amp; Bisnis</li>
+
+                    <li>Manajemen Waktu &amp; Kedisiplinan</li>
+
+                    <li>Adaptabilitas &amp; Pembelajar Cepat</li>
+
+                    <li>Kepemimpinan &amp; Kerja Sama Tim</li>
+
+                    <li>
+                        Koordinasi Acara &amp; Hubungan
+                        Pemangku Kepentingan
+                    </li>
+
+                    <li>Ketelitian &amp; Detail-Oriented</li>
+
+                    <li>
+                        Penyelesaian Masalah &amp;
+                        Manajemen Krisis
+                    </li>
+                </ul>
+            </section>
+
+        </aside>
+
+        <!-- KOLOM KANAN -->
+        <main class="main">
+
+            <!-- PROFIL -->
+            <section>
+                <h2>Profil</h2>
+
+                <p class="profile">
+                    Mahasiswa Sistem Informasi Telkom University
+                    Jakarta dengan minat kuat pada pengembangan
+                    diri dan industri teknologi. Dikenal sebagai
+                    pribadi yang adaptif, pembelajar cepat
+                    (fast learner), dan teliti. Memiliki kemampuan
+                    analisis yang baik dalam mengambil keputusan
+                    serta siap berkontribusi secara optimal,
+                    baik secara individu maupun dalam lingkungan tim.
+                </p>
+            </section>
+
+            <!-- PENGALAMAN -->
+            <section>
+                <h2>Pengalaman</h2>
+
+                <div class="item">
+                    <h3>
+                        Uji Sertifikasi Kompetensi
+                        (Manajemen Perkantoran Layanan Bisnis)
+                    </h3>
+
+                    <p class="date">Desember 2023</p>
+
+                    <p>
+                        Bertanggung jawab yang berkaitan dengan
+                        pekerjaan administrasi kantor, kemampuan
+                        berkomunikasi, serta penyusunan jadwal
+                        atau notulen rapat suatu perusahaan.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>
+                        Bendahara Japan Club SMKN 8 Jakarta
+                    </h3>
+
+                    <p class="date">
+                        Juli 2023 - Juli 2024
+                    </p>
+
+                    <p>
+                        Mengelola tata kelola keuangan Japan Club
+                        SMKN 8 Jakarta melalui pencatatan arus kas
+                        bulanan, penyusunan laporan keuangan
+                        transparan, serta pengendalian anggaran
+                        untuk kelancaran kegiatan ekstrakurikuler.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>
+                        Praktik Kerja Lapangan (PKL)
+                        Ditjen Bina Pemerintahan Desa
+                    </h3>
+
+                    <p class="date">
+                        Januari - Juni 2025
+                    </p>
+
+                    <p>
+                        Melaksanakan PKL di Ditjen Bina Pemdes
+                        dengan berfokus pada pengelolaan arsip
+                        digital/fisik, penyusunan draf laporan
+                        operasional, serta penanganan alur
+                        komunikasi administrasi secara teliti
+                        dan responsif.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>
+                        Kepanitiaan &amp; Volunteer
+                        (Dewantara | Himsi TUJ)
+                    </h3>
+
+                    <p class="date">2026</p>
+
+                    <p>
+                        Fasilitator anak-anak pada program Dewantara
+                        untuk membangun partisipasi aktif peserta,
+                        serta bertindak sebagai Contact Person (CP)
+                        Rapat Besar AD/ART HIMSI TUJ 2026 dalam
+                        mengoordinasikan komunikasi dan informasi
+                        antaranggota.
+                    </p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html> 
